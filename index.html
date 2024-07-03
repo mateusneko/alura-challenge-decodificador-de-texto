@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Codificador</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/toast.css">
+    <link rel="shortcut icon" href="assets/images/logo-alura.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img class="logo" src="./assets/images/logo-alura.png">
+        </div>
+    </header>
+    <main class="container">
+        <form class="form">
+            <div class="toast"></div>
+            <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
+            <label class="label">Apenas letras minúsculas e sem acentos</label>
+            <div class="form__buttons">
+                <button id="btn-encrypt" class="btn btn-primary" type="button" onclick="onEncrypt()">Criptografar</button>
+                <button id="btn-decrypt" class="btn" type="button" onclick="onDecrypt()">Descriptografar</button>
+            </div>
+        </form>
+        <div class="result-container">
+            <div class="no-result inactive">
+                <img class="no-result__image" src="./assets/images/no-result.svg" alt="human with blue shirt looking for a diamond">
+                <h2 class="no-result__title">Mensagem</h2>
+                <p class="no-result__text">Digite um texto que você deseja criptografar ou descriptografar</p>
+                <div class="result">
+                    <p class="result__text"></p>
+                    <button id="btn-copy" class="btn" onclick="onCopy()">Copiar</button>
+                </div>
+            </div>
+            
+        </div>
+       
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Alura Challenge - Oracle Next Education</p>
+        <p class="footer__text">Desenvolvido por <a href="https://github.com/mateusneko" target="_blank"><strong>Mateus de Andrade</strong></a></p>
+    </footer>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
